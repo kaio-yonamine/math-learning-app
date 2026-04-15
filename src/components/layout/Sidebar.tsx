@@ -26,7 +26,6 @@ export default function Sidebar() {
       </nav>
 
       <div>
-        <p>ゲストユーザー</p>
         <a href="/settings">設定</a>
       </div>
     </aside>

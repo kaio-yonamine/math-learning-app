@@ -6,12 +6,19 @@ import {
   LogOut,
   Settings,
 } from "lucide-react";
+import Image from "next/image";
+
 
 export default function Sidebar() {
   return (
     <aside className="flex min-h-screen flex-col border-r border-gray-500 px-6 py-8">
       <div className="pb-8">
-        <h2>Math Learning</h2>
+        <Image
+          src="/images/Duolingo_logo.png"
+          alt="Math Learning ロゴ"
+          width={150}
+          height={150}
+        />
       </div>
 
       <nav aria-label="メインナビゲーション" className="flex-1">

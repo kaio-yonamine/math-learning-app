@@ -1,32 +1,62 @@
+import {
+  BookOpen,
+  ScrollText,
+  RotateCcw,
+  User,
+  LogOut,
+  Settings,
+} from "lucide-react";
+
 export default function Sidebar() {
   return (
-    <aside>
-      <div>
+    <aside className="flex min-h-screen flex-col border-r border-gray-500 px-6 py-8">
+      <div className="pb-8">
         <h2>Math Learning</h2>
       </div>
 
-      <nav aria-label="メインナビゲーション">
-        <ul>
+      <nav aria-label="メインナビゲーション" className="flex-1">
+        <ul className="space-y-2">
           <li>
-            <a href="/">レッスン</a>
+            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
+              <BookOpen size={18} />
+              <span>レッスン</span>
+            </a>
           </li>
           <li>
-            <a href="/">クエスト</a>
+            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
+              <ScrollText size={18} />
+              <span>クエスト</span>
+            </a>
           </li>
           <li>
-            <a href="/">復習</a>
+            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
+              <RotateCcw size={18} />
+              <span>復習</span>
+            </a>
           </li>
-          <li>
-            <a href="/">プロフィール</a>
+          <li className="pt-4">
+            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
+              <User size={18} />
+              <span>プロフィール</span>
+            </a>
           </li>
-          <li>
-            <a href="/">ログアウト</a>
+          <li className="pt-2">
+            <a
+              href="/settings"
+              className="flex min-h-11 items-center gap-3 rounded-xl px-4"
+            >
+              <Settings size={18} />
+              <span>設定</span>
+            </a>
           </li>
         </ul>
       </nav>
 
-      <div>
-        <a href="/settings">設定</a>
+      <div className="pt-6">
+        <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
+          <LogOut size={18} />
+          <span>ログアウト</span>
+        </a>
       </div>
     </aside>
   );

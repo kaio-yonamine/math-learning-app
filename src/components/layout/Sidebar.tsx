@@ -22,37 +22,37 @@ export default function Sidebar() {
       </div>
 
       <nav aria-label="メインナビゲーション" className="flex-1">
-        <ul className="space-y-2">
+        <ul className="space-y-3">
           <li>
-            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
-              <BookOpen size={18} />
+            <a href="/" className="flex min-h-15 items-center gap-3 rounded-xl px-4 hover:bg-white/5">
+              <BookOpen size={30} />
               <span>レッスン</span>
             </a>
           </li>
           <li>
-            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
-              <ScrollText size={18} />
+            <a href="/" className="flex min-h-15 items-center gap-3 rounded-xl px-4 hover:bg-white/5">
+              <ScrollText size={30} />
               <span>クエスト</span>
             </a>
           </li>
           <li>
-            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
-              <RotateCcw size={18} />
+            <a href="/" className="flex min-h-15 items-center gap-3 rounded-xl px-4 hover:bg-white/5">
+              <RotateCcw size={30} />
               <span>復習</span>
             </a>
           </li>
           <li className="pt-4">
-            <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
-              <User size={18} />
+            <a href="/" className="flex min-h-15 items-center gap-3 rounded-xl px-4 hover:bg-white/5">
+              <User size={30} />
               <span>プロフィール</span>
             </a>
           </li>
           <li className="pt-2">
             <a
               href="/settings"
-              className="flex min-h-11 items-center gap-3 rounded-xl px-4"
+              className="flex min-h-15 items-center gap-3 rounded-xl px-4 hover:bg-white/5"
             >
-              <Settings size={18} />
+              <Settings size={30} />
               <span>設定</span>
             </a>
           </li>
@@ -60,8 +60,8 @@ export default function Sidebar() {
       </nav>
 
       <div className="pt-6">
-        <a href="/" className="flex min-h-11 items-center gap-3 rounded-xl px-4">
-          <LogOut size={18} />
+        <a href="/" className="flex min-h-15 items-center gap-3 rounded-xl px-4 hover:bg-white/5">
+          <LogOut size={30} />
           <span>ログアウト</span>
         </a>
       </div>
